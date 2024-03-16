@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cigar Score</title>
+    <meta name="author" content="Németh Gábor">
+    <meta name="keywords" content="Cigar Score">
+    <meta name="description" content="Cigar Score website">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body>
+    <nav>
+        <ul class="sidebar">
+            <li onclick="hideSideBar()"><a><img height="50" src="pics/logo.png" alt="Cigar Score"
+                        title="Cigar Score"></a></li>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="score.html">CIGAR SCORE</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+        </ul>
+        <ul>
+            <li class="hideOnMobile"><a href="index.html"><img height="50" src="pics/logo.png" alt=""></a></li>
+            <li class="hideOnMobile"><a href="index.html">HOME</a></li>
+            <li class="hideOnMobile"><a href="score.html">CIGAR SCORE</a></li>
+            <li class="hideOnMobile"><a href="about.html">ABOUT</a></li>
+            <li class="menu-button" onclick=showSideBar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg"
+                        height="26" viewBox="0 -960 960 960" width="26">
+                        <path fill="white" d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+                    </svg></a></li>
+        </ul>
+    </nav>
+
+    <div class="container py-2">
+        <div class="row">
+            <div class="col-12">
+                <h1>About</h1>
+                <img class="d-none d-md-block mx-auto my-3 pic" src="pics/cigar.jpg" alt="Cigar Score" title="Cigar Score">
+                <img class="w-100 img-fluid d-md-none mx-auto my-3 pic" src="pics/cigar.jpg" alt="Cigar Score" title="Cigar Score">
+            </div>
+            <div class="col-12">
+                <p>Welcome to Cigar Score, where passionate cigar aficionados find their home! We are an enthusiastic
+                    team deeply committed to the art and culture of cigar smoking. Our goal is to build a community on
+                    this online platform where cigar lovers can meet, exchange experiences, and draw inspiration. Our
+                    website provides users with the opportunity to upload and rate their favorite cigars, as well as
+                    browse through the opinions of others. We offer expert advice on cigar selection, storage, and
+                    enjoyment. We take pride in being a hub where passionate discussions, competitions, and events about
+                    cigars take place. Our ultimate aim is to collectively discover and celebrate the joy and richness
+                    of cigar smoking. Join us and become a part of this exciting community!</p>
+            </div>
+        </div>
+    </div>
+
+    <footer class="my-2 text-center">
+        <h4>&copy; Cigar Rating website - Németh Gábor</h4>
+        <h5>All rights reserved!</h5>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

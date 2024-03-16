@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Madimi+One&display=swap');
+
+*{
+   margin: 0;
+   padding: 0;
+}
+
+body{
+   min-height: 100vh;
+   background-color: #d1d5dd !important;
+   font-family: "Madimi One", sans-serif !important;
+   font-style: normal !important;
+}
+
+nav, footer{
+   background-color: #1f242d;
+   box-shadow: 5px 5px 10px grey;
+   color: white;
+}
+
+nav ul{
+   width: 100%;
+   list-style: none;
+   display: flex;
+   justify-content: flex-end;
+   align-items: center;
+}
+
+nav li{
+   height: 70px;
+}
+
+nav a{
+   height: 100%;
+   padding: 0 60px;
+   text-decoration: none;
+   display: flex;
+   align-items: center;
+   color: #1670a5;
+   font-size: larger;
+}
+
+nav a:hover{
+   background-color: #000000;
+}
+
+nav li:first-child{
+   margin-right: auto;
+}
+
+.sidebar{
+   position: fixed;
+   top: 0;
+   right: 0;
+   height: 100vh;
+   width: 250px;
+   z-index: 999;
+   background-color: rgb(20, 18, 18);
+   backdrop-filter: blur(10px);
+   box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+   display: none;
+   flex-direction: column;
+   align-items: flex;
+   justify-content: flex-start;
+}
+
+.sidebar li{
+   width: 100%;
+}
+
+.sidebar a{
+   width: 100%;
+}
+
+.menu-button{
+   display: none;
+}
+@media(max-width: 800px){
+   .hideOnMobile{
+      display: none;
+   }
+
+   .menu-button{
+      display: block;
+   }
+}
+
+@media(max-width: 400px){
+   .sidebar{
+      width: 100%;
+   }
+}
+
+.pic{
+   box-shadow: 5px 5px 10px grey;
+}
+
+.pic:hover{
+   box-shadow: 5px 5px 10px rgb(95, 86, 86);
+}
+
+@media (max-width: 767px) {
+   table, thead, tbody, th, td, tr {
+     display: block;
+   }
+ 
+   tr{
+     border: 1px solid rgb(175, 175, 175);
+     margin-bottom: 30px;
+   }
+ 
+   td{
+     border: none;
+     border-bottom: 1px solid rgb(175, 175, 175);
+     position: relative;
+     padding-left: 50%;
+   }
+ 
+   td:before{
+     position: absolute;
+     top: 6px;
+     left: 6px;
+     width: 45%;
+     padding-right: 10px;
+     white-space: nowrap;
+     content: attr(data-th);
+     font-weight: bold;
+   }
+ }
+
+ .contact form .input-box{
+   display: flex;
+   justify-content: space-between;
+   flex-wrap: wrap;
+}
+.contact form .input-box input,
+.contact form textarea{
+  width: 100%;
+  padding: 1.5rem;
+  color: var(--text-color);
+  background: rgb(193, 189, 179);
+  border-radius: .8rem;
+  margin: .7rem 0; 
+}
+
+.contact form .input-box input{
+  width: 49%;
+}
+
+.contact form textarea{
+  resize: none;
+}
+
+.contact form .btn{
+  margin-top: 2rem;
+  cursor: pointer;
+}
